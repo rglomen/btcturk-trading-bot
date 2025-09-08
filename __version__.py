@@ -1,10 +1,32 @@
 """Version information for BTCTurk Trading Bot."""
 
-__version__ = "1.0.0"
-__version_info__ = (1, 0, 0)
+__version__ = "1.1.0"
+__version_info__ = (1, 1, 0)
 
 # Version history
 VERSION_HISTORY = {
+    "1.1.0": {
+        "date": "2025-01-08",
+        "changes": [
+            "İşlem geçmişi bölümü eklendi",
+            "Detaylı işlem tablosu ve filtreleme",
+            "İşlem istatistikleri (kar/zarar, başarı oranı)",
+            "CSV'ye aktarma özelliği",
+            "Gelişmiş log kayıtları sistemi",
+            "Açılır-kapanır log kategorileri",
+            "Log seviye filtreleme",
+            "Log kaydetme ve temizleme özellikleri",
+            "Kullanıcı arayüzü iyileştirmeleri"
+        ],
+        "features": [
+            "İşlem geçmişi takibi",
+            "Filtrelenebilir işlem tablosu",
+            "Detaylı istatistik raporları",
+            "Kategorize edilmiş log sistemi",
+            "Log yönetim araçları",
+            "Veri dışa aktarma"
+        ]
+    },
     "1.0.0": {
         "date": "2025-01-08",
         "changes": [

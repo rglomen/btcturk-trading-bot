@@ -384,12 +384,14 @@ class SettingsWindow:
                     font=ctk.CTkFont(size=16, weight="bold")).pack(pady=(10, 5))
         
         ctk.CTkLabel(frame, text="Tema:").pack(anchor="w", padx=10)
-        ctk.CTkComboBox(frame, values=["dark", "light"], 
-                       variable=self.theme_var).pack(fill="x", padx=10, pady=2)
+        theme_combo = ctk.CTkComboBox(frame, values=["dark", "light"], 
+                                     variable=self.theme_var, command=self.on_theme_change)
+        theme_combo.pack(fill="x", padx=10, pady=2)
         
         ctk.CTkLabel(frame, text="Renk Teması:").pack(anchor="w", padx=10)
-        ctk.CTkComboBox(frame, values=["blue", "green", "dark-blue"], 
-                       variable=self.color_theme_var).pack(fill="x", padx=10, pady=(2, 15))
+        color_combo = ctk.CTkComboBox(frame, values=["blue", "green", "dark-blue"],
+                                      variable=self.color_theme_var, command=self.on_color_theme_change)
+        color_combo.pack(fill="x", padx=10, pady=(2, 15))
     
     def create_notification_section(self, parent):
         """
@@ -547,6 +549,40 @@ class SettingsWindow:
                 messagebox.showinfo("Başarılı", "Ayarlar içe aktarıldı!")
             except Exception as e:
                 messagebox.showerror("Hata", f"İçe aktarma hatası: {str(e)}")
+    
+    def on_theme_change(self, value):
+        """
+        Tema değişikliğini anında uygular
+        """
+        try:
+            ctk.set_appearance_mode(value)
+            logger.info(f"Tema değiştirildi: {value}")
+        except Exception as e:
+            logger.error(f"Tema değiştirme hatası: {e}")
+    
+    def on_color_theme_change(self, value):
+        """
+        Renk teması değişikliğini anında uygular
+        """
+        try:
+            # Geçerli renk temalarını kontrol et
+            valid_themes = ["blue", "green", "dark-blue"]
+            if value in valid_themes:
+                ctk.set_default_color_theme(value)
+                logger.info(f"Renk teması değiştirildi: {value}")
+                # Pencereyi yeniden başlatmak için kullanıcıyı bilgilendir
+                messagebox.showinfo("Bilgi", "Renk teması değişikliği için uygulamayı yeniden başlatmanız önerilir.")
+            else:
+                logger.warning(f"Geçersiz renk teması: {value}")
+                messagebox.showwarning("Uyarı", f"'{value}' geçersiz bir renk teması. Varsayılan tema kullanılacak.")
+                ctk.set_default_color_theme("blue")
+        except Exception as e:
+            logger.error(f"Renk teması değiştirme hatası: {e}")
+            # Hata durumunda varsayılan temayı kullan
+            try:
+                ctk.set_default_color_theme("blue")
+            except:
+                pass
     
     def center_window(self):
         """

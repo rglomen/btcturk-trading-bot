@@ -113,8 +113,15 @@ class TradingBotApplication:
             # Ayar yöneticisini başlat
             self.settings_manager = SettingsManager("bot_settings.json")
             
-            # Bot bileşenlerini başlat
-            self.initialize_bot_components()
+            # Bot bileşenlerini başlat (API hatası durumunda devam et)
+            try:
+                self.initialize_bot_components()
+            except Exception as e:
+                self.error_handler.handle_error(e, "Bot Bileşenleri")
+                # Bot bileşenleri başlatılamazsa None olarak ayarla
+                self.bot = None
+                self.trading_strategy = None
+                self.risk_manager = None
             
             # GUI'yi başlat
             self.gui = TradingBotGUI(
@@ -122,7 +129,8 @@ class TradingBotApplication:
                 self.bot,
                 self.settings_manager,
                 self.error_handler,
-                self
+                self,
+                app_instance=self
             )
             
             # GUI güncellemelerini başlat

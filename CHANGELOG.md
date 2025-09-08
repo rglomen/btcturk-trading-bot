@@ -8,11 +8,36 @@ ve bu proje [Semantic Versioning](https://semver.org/spec/v2.0.0.html) kullanmak
 ## [Unreleased]
 
 ### Planned
-- İşlem geçmişi bölümü
-- Log kayıtları için açılır-kapanır bölüm
 - GitHub Actions CI/CD pipeline
 - Otomatik testler
 - Docker desteği
+- Gelişmiş grafik ve chart desteği
+- Mobil uygulama
+
+## [1.1.0] - 2025-01-08
+
+### Added
+- 📊 **İşlem Geçmişi Bölümü**: Tüm işlemlerin detaylı takibi
+  - Filtrelenebilir işlem tablosu (tarih, tür, coin)
+  - Detaylı istatistikler (toplam işlem, kar/zarar, başarı oranı)
+  - CSV formatında dışa aktarma özelliği
+  - Gerçek zamanlı işlem ekleme
+- 📝 **Gelişmiş Log Sistemi**: Kategorize edilmiş log yönetimi
+  - Açılır-kapanır log kategorileri (Sistem, Trading, API, Hata)
+  - Log seviye filtreleme (INFO, WARNING, ERROR)
+  - Log kaydetme ve temizleme araçları
+  - Otomatik log yenileme
+
+### Improved
+- 🎨 Kullanıcı arayüzü iyileştirmeleri
+- 🔧 Daha iyi hata yönetimi
+- 📱 Responsive tasarım geliştirmeleri
+
+### Technical
+- Modüler log yönetim sistemi
+- Thread-safe işlem geçmişi güncellemeleri
+- Optimize edilmiş GUI performansı
+- Gelişmiş veri filtreleme algoritmaları
 
 ## [1.0.0] - 2025-01-08
 

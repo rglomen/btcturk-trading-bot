@@ -1,6 +1,6 @@
 # BTCTurk Trading Bot
 
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/yourusername/btcturk-trading-bot)
+[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/rglomen/btcturk-trading-bot)
 [![Python](https://img.shields.io/badge/python-3.8+-green.svg)](https://python.org)
 [![License](https://img.shields.io/badge/license-MIT-orange.svg)](LICENSE)
 [![BTCTurk](https://img.shields.io/badge/exchange-BTCTurk-red.svg)](https://btcturk.com)
@@ -28,7 +28,7 @@
 
 1. **Projeyi İndirin**:
    ```bash
-   git clone https://github.com/yourusername/btcturk-trading-bot.git
+   git clone https://github.com/rglomen/btcturk-trading-bot.git
    cd btcturk-trading-bot
    ```
    
@@ -446,9 +446,9 @@ Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICE
 
 ## 🔗 Bağlantılar
 
-- **GitHub Repository**: [btcturk-trading-bot](https://github.com/yourusername/btcturk-trading-bot)
-- **Issues**: [Bug Reports & Feature Requests](https://github.com/yourusername/btcturk-trading-bot/issues)
-- **Wiki**: [Documentation](https://github.com/yourusername/btcturk-trading-bot/wiki)
+- **GitHub Repository**: [btcturk-trading-bot](https://github.com/rglomen/btcturk-trading-bot)
+- **Issues**: [Bug Reports & Feature Requests](https://github.com/rglomen/btcturk-trading-bot/issues)
+- **Wiki**: [Documentation](https://github.com/rglomen/btcturk-trading-bot/wiki)
 - **BTCTurk API**: [Official Documentation](https://docs.btcturk.com/)
 
 ## ⭐ Destek

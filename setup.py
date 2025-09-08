@@ -39,11 +39,11 @@ setup(
     description="Automated cryptocurrency trading bot for BTCTurk exchange",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/btcturk-trading-bot",
+    url="https://github.com/rglomen/btcturk-trading-bot",
     project_urls={
-        "Bug Tracker": "https://github.com/yourusername/btcturk-trading-bot/issues",
-        "Documentation": "https://github.com/yourusername/btcturk-trading-bot/wiki",
-        "Source Code": "https://github.com/yourusername/btcturk-trading-bot",
+        "Bug Tracker": "https://github.com/rglomen/btcturk-trading-bot/issues",
+        "Documentation": "https://github.com/rglomen/btcturk-trading-bot/wiki",
+        "Source Code": "https://github.com/rglomen/btcturk-trading-bot",
     },
     packages=find_packages(),
     classifiers=[

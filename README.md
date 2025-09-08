@@ -468,13 +468,12 @@ Eğer bu proje işinize yaradıysa, lütfen ⭐ vererek destek olun!
 
 ### İletişim
 - **GitHub Issues**: Bug raporu ve özellik istekleri için
-- **Email**: support@example.com
+- **Email**: byruslanlomen@gmail.com
 - **Discord**: Trading Bot Community
 
 ### Dokümantasyon
 - [API Dokümantasyonu](https://docs.btcturk.com/)
-- [Trading Rehberi](https://github.com/your-username/btcturk-trading-bot/wiki)
-- [Video Eğitimler](https://youtube.com/playlist)
+- [Trading Rehberi](https://github.com/rglomen/btcturk-trading-bot/wiki)
 
 ## 📄 Lisans
 
@@ -509,3 +508,4 @@ Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICE
 **⚡ BTCTurk Trading Bot ile akıllı trading deneyimi yaşayın!**
 
 *Bu bot eğitim ve araştırma amaçlıdır. Finansal tavsiye değildir. Kendi riskinizle kullanın.*
+Geliştiren Resul LÖMEN 

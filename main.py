@@ -14,8 +14,8 @@ Seçilen coin'i alır ve belirlenen kar yüzdesine ulaştığında satar.
 - Hata yönetimi ve loglama
 - Güvenli ayar saklama
 
-Geliştirici: AI Assistant
-Tarih: 2024
+Geliştirici: Resul LÖMEN 
+Tarih: 2025
 """
 
 import sys

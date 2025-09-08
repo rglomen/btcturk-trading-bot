@@ -1,10 +1,29 @@
 """Version information for BTCTurk Trading Bot."""
 
-__version__ = "1.1.0"
-__version_info__ = (1, 1, 0)
+__version__ = "1.1.1"
+__version_info__ = (1, 1, 1)
 
 # Version history
 VERSION_HISTORY = {
+    "1.1.1": {
+        "date": "2025-01-08",
+        "changes": [
+            "Kritik API yanıt hataları düzeltildi",
+            "Trading bot 'str' object has no attribute 'get' hatası giderildi",
+            "Dashboard güncelleme sorunu çözüldü",
+            "Coin takip sistemi düzeltildi",
+            "API yanıt tip kontrolleri eklendi",
+            "Sistem kararlılığı artırıldı"
+        ],
+        "fixes": [
+            "place_buy_order, place_sell_order API yanıt kontrolü",
+            "monitor_buy_order initial_balance kontrolü",
+            "GUI summary_frame eksikliği",
+            "Coin takip callback parametre uyumsuzluğu",
+            "update_coin_price profit_pct parametresi"
+        ],
+        "type": "bugfix"
+    },
     "1.1.0": {
         "date": "2025-01-08",
         "changes": [

@@ -14,6 +14,21 @@ ve bu proje [Semantic Versioning](https://semver.org/spec/v2.0.0.html) kullanmak
 - Gelişmiş grafik ve chart desteği
 - Mobil uygulama
 
+## [1.1.1] - 2025-01-08
+
+### Fixed
+- 🔧 **Kritik API Yanıt Hataları**: Trading bot'ta 'str' object has no attribute 'get' hatası düzeltildi
+  - `place_buy_order`, `place_sell_order` ve `place_sell_order_at_target_price` metotlarında API yanıt tip kontrolü eklendi
+  - `monitor_buy_order` metodunda `initial_balance` kontrolü eklendi
+  - API'den beklenmeyen string yanıt geldiğinde güvenli hata işleme
+- 🖥️ **Dashboard Güncelleme Sorunu**: 'summary_frame' eksikliği hatası giderildi
+  - GUI'de eksik widget referansları düzeltildi
+  - Durum güncellemeleri artık doğru çalışıyor
+- 🪙 **Coin Takip Sistemi**: Eklenen coinlerin takip edilmemesi sorunu çözüldü
+  - Callback fonksiyonları arasındaki parametre uyumsuzluğu giderildi
+  - `update_coin_price` metoduna eksik `profit_pct` parametresi eklendi
+- ⚡ **Sistem Kararlılığı**: Uygulama artık hatasız başlatılıyor ve çalışıyor
+
 ## [1.1.0] - 2025-01-08
 
 ### Added

@@ -489,7 +489,7 @@ Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICE
 
 ## 📈 Sürüm Geçmişi
 
-### v1.0.0 (2024-01-XX)
+### v1.0.0 (2025-09-08)
 - ✅ İlk stabil sürüm
 - ✅ Temel trading fonksiyonları
 - ✅ Modern GUI arayüzü
@@ -501,8 +501,8 @@ Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICE
 ### Gelecek Sürümler
 - 🔄 v1.1.0: Gelişmiş teknik analiz
 - 🔄 v1.2.0: Çoklu exchange desteği
-- 🔄 v1.3.0: Mobil uygulama
-- 🔄 v2.0.0: AI destekli trading
+- 🔄 v1.3.0: Daha düşük bellek kullanımı 
+- 🔄 v2.0.0: henüz belirlemedim :)
 
 ---
 

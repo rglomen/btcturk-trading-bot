@@ -1,0 +1,4 @@
+requests
+customtkinter
+numpy
+cryptography
